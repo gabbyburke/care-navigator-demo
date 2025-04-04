@@ -87,8 +87,8 @@ export const cloudFunctionService = {
         },
         body: JSON.stringify({ 
           question,
-          programs: programs || []
-          // No history parameter - using direct generation approach
+          programs: programs || [],
+          chatHistory: chatHistory || []
         }),
       });
 
