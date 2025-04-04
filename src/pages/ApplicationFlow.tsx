@@ -40,7 +40,7 @@ export default function ApplicationFlow() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   // Selected programs from previous step
-  const [selectedPrograms, setSelectedPrograms] = useState<Program[]>(() => {
+  const [selectedPrograms] = useState<Program[]>(() => {
     const stored = localStorage.getItem('selectedPrograms');
     return stored ? JSON.parse(stored) : [];
   });
